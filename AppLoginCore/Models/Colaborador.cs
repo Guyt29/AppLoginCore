@@ -28,5 +28,6 @@ namespace AppLoginCore.Models
         [Display(Name = "Tipo")]
         [Required(ErrorMessage = "O Tipo é obrigatório")]
         public string Tipo { get; set; }
-}
+
+    }
 }

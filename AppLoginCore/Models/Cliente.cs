@@ -13,7 +13,7 @@ namespace AppLoginCore.Models
 
         [Display(Name = "Nascimento")]
         [Required(ErrorMessage = "A data é obrigatória")]
-        public  DateTime Nacimento { get; set; }
+        public  DateTime Nascimento { get; set; }
 
         [Display(Name = "Sexo")]
         [Required(ErrorMessage = "O Sexo é obrigatório")]
