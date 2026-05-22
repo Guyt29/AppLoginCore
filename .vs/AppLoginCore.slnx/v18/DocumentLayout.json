@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\repository\\colaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\repository\\colaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\repository\\contract\\icolaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\repository\\contract\\icolaboradorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\applogincore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\applogincore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\3mtec\\desktop\\applogincore\\applogincore\\models\\constants\\colaboradortipoconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,24 +62,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ColaboradorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\ColaboradorRepository.cs",
+              "RelativeDocumentMoniker": "AppLoginCore\\Repository\\ColaboradorRepository.cs",
+              "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\ColaboradorRepository.cs",
+              "RelativeToolTip": "AppLoginCore\\Repository\\ColaboradorRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCkAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:19:29.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Repository\\ClienteRepository.cs",
               "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\ClienteRepository.cs",
               "RelativeToolTip": "AppLoginCore\\Repository\\ClienteRepository.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwEYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T11:33:08.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Colaborador.cs",
+              "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Colaborador.cs",
+              "RelativeDocumentMoniker": "AppLoginCore\\Models\\Colaborador.cs",
+              "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Colaborador.cs",
+              "RelativeToolTip": "AppLoginCore\\Models\\Colaborador.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwB0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T13:21:14.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IColaboradorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\Contract\\IColaboradorRepository.cs",
+              "RelativeDocumentMoniker": "AppLoginCore\\Repository\\Contract\\IColaboradorRepository.cs",
+              "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\Contract\\IColaboradorRepository.cs",
+              "RelativeToolTip": "AppLoginCore\\Repository\\Contract\\IColaboradorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:09:18.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Program.cs",
+              "RelativeDocumentMoniker": "AppLoginCore\\Program.cs",
+              "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Program.cs",
+              "RelativeToolTip": "AppLoginCore\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T12:05:07.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
@@ -75,25 +139,23 @@
               "RelativeToolTip": "AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:27:27.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:27:27.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppLoginCore",
+              "DocumentIndex": 8,
+              "Title": "AppLoginCore.csproj",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\AppLoginCore.csproj",
               "RelativeDocumentMoniker": "AppLoginCore\\AppLoginCore.csproj",
               "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\AppLoginCore.csproj",
               "RelativeToolTip": "AppLoginCore\\AppLoginCore.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-12T11:22:24.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:22:24.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "SituacaoConstant.cs",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Constants\\SituacaoConstant.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Models\\Constants\\SituacaoConstant.cs",
@@ -101,12 +163,11 @@
               "RelativeToolTip": "AppLoginCore\\Models\\Constants\\SituacaoConstant.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:14:59.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:14:59.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ColaboradorTipoConstant.cs",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Constants\\ColaboradorTipoConstant.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Models\\Constants\\ColaboradorTipoConstant.cs",
@@ -114,25 +175,11 @@
               "RelativeToolTip": "AppLoginCore\\Models\\Constants\\ColaboradorTipoConstant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T11:13:57.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T11:13:57.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Colaborador.cs",
-              "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Colaborador.cs",
-              "RelativeDocumentMoniker": "AppLoginCore\\Models\\Colaborador.cs",
-              "ToolTip": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Colaborador.cs",
-              "RelativeToolTip": "AppLoginCore\\Models\\Colaborador.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwB0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T13:21:14.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "banco.txt",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Banco\\banco.txt",
               "RelativeDocumentMoniker": "AppLoginCore\\Banco\\banco.txt",
@@ -140,12 +187,11 @@
               "RelativeToolTip": "AppLoginCore\\Banco\\banco.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-05-08T13:15:25.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T13:15:25.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "banco.txt",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Banco\\banco.txt",
               "RelativeDocumentMoniker": "AppLoginCore\\Banco\\banco.txt",
@@ -156,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Models\\Cliente.cs",
@@ -164,12 +210,11 @@
               "RelativeToolTip": "AppLoginCore\\Models\\Cliente.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T12:16:37.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T12:16:37.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\3MTEC\\Desktop\\AppLoginCore\\AppLoginCore\\appsettings.json",
               "RelativeDocumentMoniker": "AppLoginCore\\appsettings.json",
@@ -177,8 +222,7 @@
               "RelativeToolTip": "AppLoginCore\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-08T12:13:32.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T12:13:32.955Z"
             }
           ]
         }
