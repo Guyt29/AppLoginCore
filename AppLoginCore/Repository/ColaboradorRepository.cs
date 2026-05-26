@@ -34,7 +34,7 @@ namespace AppLoginCore.Repository
                 conexao.Open();
 
                 MySqlCommand cmd = new MySqlCommand("insert into Colaborador(Nome, CPF, Telefone, Email, Senha, Tipo )" +
-                                                                                   " values (@Nome, @CPF, @Telefone, @Email, @Senha, @Tipo)", conexao)
+                                                                                   " values (@Nome, @CPF, @Telefone, @Email, @Senha, @Tipo)", conexao);
 
 
                 cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = colaborador.Nome;
@@ -97,7 +97,34 @@ namespace AppLoginCore.Repository
 
         public IEnumerable<Colaborador> ObterTodosColaboradores()
         {
-            throw new NotImplementedException();
+            List<Colaborador> colabList = new List<Colaborador>();
+            using(var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM COLABORADOR", conexao);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+                conexao.Close();
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    colabList.Add(
+                        new Colaborador
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            Nome = (string)(dr["Nome"]),
+                            Email = (string)(dr["Email"]),
+                            Senha = (string)(dr["Senha"]),
+                            Tipo = (string)(dr["Tipo"])
+                        });
+                }
+                return colabList;
+            }
         }
 
         public IPagedList<Colaborador> ObterTodosColaboradores(int? pagina)
