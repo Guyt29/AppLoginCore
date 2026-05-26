@@ -4,6 +4,7 @@ using AppLoginCore.Repository.Contract;
 using MySql.Data.MySqlClient;
 using System.Data;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 namespace AppLoginCore.Repository
 {
@@ -11,12 +12,13 @@ namespace AppLoginCore.Repository
     {
         private readonly string _conexaoMySQL;
 
-        IConfiguration _config;
+        IConfiguration _conf;
 
         public ClienteRepository(IConfiguration conf)
         {
             _conexaoMySQL = conf.GetConnectionString("ConexaoMySQL");
-            _config = conf;
+            _conf = conf;
+          
         }
 
         public void Atualizar(Cliente cliente)
@@ -187,9 +189,38 @@ namespace AppLoginCore.Repository
 
         }
 
-        public IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa)
+        public IPagedList<Colaborador> ObterTodosColaboradores(int? pagina)
         {
-            throw new NotImplementedException();
+            int RegistroPorPagina = _conf.GetValue<int>("RegistroPorPagina");
+
+            int NumeroPagina = pagina ?? 1;
+            List<Colaborador> ListCat = new List<Colaborador>();
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from colaborador;", conexao);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+                conexao.Close();
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    ListCat.Add(
+                        new Colaborador
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            Nome = (string)(dr["Nome"]),
+                            Senha = (string)(dr["Senha"]),
+                            Email = (string)(dr["Email"]),
+                            Tipo = (string)(dr["Senha"])
+
+                        });
+                }
+                return ListCat.ToPagedList<Colaborador>(NumeroPagina, RegistroPorPagina);
+            }
         }
     }
 }
