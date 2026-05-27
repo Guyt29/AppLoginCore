@@ -1,4 +1,7 @@
-﻿namespace AppLoginCore.Libraries.Login
+﻿using AppLoginCore.Models;
+using Newtonsoft.Json;
+
+namespace AppLoginCore.Libraries.Login
 {
     public class LoginCliente
     {
@@ -8,5 +11,26 @@
         {
             _sessao = sessao;
         }
+        public void Login(Cliente cliente)
+        {
+            string clienteJSONString = JsonConvert.SerializeObject(cliente);
+
+            _sessao.Cadastrar(Key, clienteJSONString);
+        }
+
+        public Cliente GetCliente() {
+            // Deserializar
+            if (_sessao.Existe(Key))
+            {
+                string clienteJSONString = _sessao.Consultar(Key);
+                return JsonConvert.DeserializeObject<Cliente>(clienteJSONString);
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
     }
 }
