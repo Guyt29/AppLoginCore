@@ -193,7 +193,7 @@ namespace AppLoginCore.Repository
                             Tipo = (string)(dr["Senha"])
 
                         });
-                }
+                } 
                 return ListCat.ToPagedList<Colaborador>(NumeroPagina, RegistroPorPagina);
             }
         }
