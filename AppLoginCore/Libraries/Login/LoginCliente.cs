@@ -30,6 +30,11 @@ namespace AppLoginCore.Libraries.Login
                 return null;
             }
         }
+        //Remove a sessão e desloga o CLiente
+        public void Logout()
+        {
+            _sessao.RemoverTodos();
+        }
 
 
     }
