@@ -1,3 +1,4 @@
+using AppLoginCore.Libraries.Login;
 using AppLoginCore.Repository;
 using AppLoginCore.Repository.Contract;
 
@@ -6,10 +7,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+//Adicionando para manipular a view
+builder.Services.AddHttpContextAccessor();
 
 //Adicionar interface como serviço
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
+builder.Services.AddScoped<AppLoginCore.Libraries.Sessao.Sessao>();
+builder.Services.AddScoped<LoginCliente>();
 
 // Corrigir problema com TEMPDATA
 builder.Services.AddDistributedMemoryCache();

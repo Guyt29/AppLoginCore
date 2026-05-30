@@ -48,6 +48,12 @@ namespace AppLoginCore.Controllers
             //return new ContentResult(){ Content = "Este é o Painel do Cliente!"};
             return View();
         }
+
+        public IActionResult LogoutCliente()
+        {
+            _loginCliente.Logout();
+            return RedirectToAction(nameof(Index));
+        }
         public IActionResult Index()
         {
             return View();

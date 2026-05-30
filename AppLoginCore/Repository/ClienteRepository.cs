@@ -189,7 +189,7 @@ namespace AppLoginCore.Repository
 
         }
 
-        public IPagedList<Colaborador> ObterTodosColaboradores(int? pagina)
+        public IPagedList<Colaborador> ObterTodosClientes(int? pagina)
         {
             int RegistroPorPagina = _conf.GetValue<int>("RegistroPorPagina");
 
@@ -221,6 +221,11 @@ namespace AppLoginCore.Repository
                 }
                 return ListCat.ToPagedList<Colaborador>(NumeroPagina, RegistroPorPagina);
             }
+        }
+
+        public IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa)
+        {
+            throw new NotImplementedException();
         }
     }
 }
