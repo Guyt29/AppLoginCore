@@ -62,6 +62,15 @@ namespace AppLoginCore.Areas.Colaborador.Controllers
 
         public IActionResult PainelComum()
         {
+            ViewBag.Nome = _loginColaborador.GetColaborador().Nome;
+            ViewBag.Tipo = _loginColaborador.GetColaborador().Tipo;
+            Viewbag.Email = _loginColaborador.GetColaborador().Email;
+            // return new ContentResult() {content = "este é o painel do colaborador}
+            return View();
+        }
+
+        public IActionResult Painel()
+        {
             return View();
         }
     }
