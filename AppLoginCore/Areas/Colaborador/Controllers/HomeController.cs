@@ -64,7 +64,7 @@ namespace AppLoginCore.Areas.Colaborador.Controllers
         {
             ViewBag.Nome = _loginColaborador.GetColaborador().Nome;
             ViewBag.Tipo = _loginColaborador.GetColaborador().Tipo;
-            Viewbag.Email = _loginColaborador.GetColaborador().Email;
+            ViewBag.Email = _loginColaborador.GetColaborador().Email;
             // return new ContentResult() {content = "este é o painel do colaborador}
             return View();
         }
@@ -72,6 +72,12 @@ namespace AppLoginCore.Areas.Colaborador.Controllers
         public IActionResult Painel()
         {
             return View();
+        }
+
+        public IActionResult Logout()
+        {
+            _loginColaborador.Logout();
+            return RedirectToAction("Login", 'Home');
         }
     }
 }
