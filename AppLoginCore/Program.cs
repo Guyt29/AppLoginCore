@@ -15,6 +15,8 @@ builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<AppLoginCore.Libraries.Sessao.Sessao>();
 builder.Services.AddScoped<LoginCliente>();
+builder.Services.AddScoped<LoginColaborador>();
+
 
 // Corrigir problema com TEMPDATA
 builder.Services.AddDistributedMemoryCache();
