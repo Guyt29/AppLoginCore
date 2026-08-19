@@ -1,4 +1,5 @@
 using AppLoginCore.Libraries.Login;
+using AppLoginCore.Libraries.Middleware;
 using AppLoginCore.Repository;
 using AppLoginCore.Repository.Contract;
 
@@ -50,6 +51,7 @@ app.UseDefaultFiles();
 app.MapStaticAssets();
 app.UseCookiePolicy();
 app.UseSession();
+app.UseMiddleware<ValidateAntiForgeryTokenMiddleware>();
 
 app.UseRouting();
 
