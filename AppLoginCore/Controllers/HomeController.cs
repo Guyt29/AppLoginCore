@@ -1,6 +1,7 @@
 using AppLoginCore.Libraries.Filtro;
 using AppLoginCore.Libraries.Login;
 using AppLoginCore.Models;
+using AppLoginCore.Models.Constant;
 using AppLoginCore.Repository.Contract;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -63,6 +64,18 @@ namespace AppLoginCore.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+        public IActionResult Cadastrar()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Cadastrar([FromForm] Cliente cliente)
+        {
+            cliente.Situacao = SituacaoConstant.Ativo;
+
+            _clienteRepository.Cadastrar(cliente);
+            return RedirectToAction(nameof(Cadastrar));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
