@@ -28,4 +28,8 @@
     <None Include="wwwroot\resources\lib\bootstrap-ecommerce-uikit\ui-ecommerce\sass\ui-assets\helpers\.DS_Store" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Colaborador\Views\Cliente\" />
+  </ItemGroup>
+
 </Project>

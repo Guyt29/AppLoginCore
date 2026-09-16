@@ -27,7 +27,7 @@ namespace AppLoginCore.Repository
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("update tbCliente set Nome=@Nome, Nascimento=@Nascimento, Sexo=@Sexo, CPF=@CPF," +
+                MySqlCommand cmd = new MySqlCommand("update Cliente set Nome=@Nome, Nascimento=@Nascimento, Sexo=@Sexo, CPF=@CPF," +
                     " Telefone=@Telefone, Email=@Email, Senha=@Senha, Situacao=@Situacao where Id=@Id)", conexao);
 
                 cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = cliente.Id;
@@ -51,17 +51,17 @@ namespace AppLoginCore.Repository
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("insert into tbCliente (Nome, Nascimento, Sexo, CPF, Telefone, Email, Senha, Situacao)" +
+                MySqlCommand cmd = new MySqlCommand("insert into Cliente (Nome, Nascimento, Sexo, CPF, Telefone, Email, Senha, Situacao)" +
                     "values (@Nome, @Nascimento, @Sexo, @CPF, @Telefone, @Email, @Senha, @Situacao)", conexao);
 
                 cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = cliente.Nome;
-                cmd.Parameters.Add("@Nascimento", MySqlDbType.VarChar).Value = cliente.Nascimento;
+                cmd.Parameters.Add("@Nascimento", MySqlDbType.Datetime).Value = cliente.Nascimento;
                 cmd.Parameters.Add("@Sexo", MySqlDbType.VarChar).Value = cliente.Sexo;
                 cmd.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = cliente.CPF;
                 cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone;
                 cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = cliente.Email;
                 cmd.Parameters.Add("@Senha", MySqlDbType.VarChar).Value = cliente.Senha;
-                cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = Situacao;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
 
                 cmd.ExecuteNonQuery();
                 conexao.Close();
@@ -73,7 +73,7 @@ namespace AppLoginCore.Repository
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("delete from tbCliente where Id=@Id", conexao);
+                MySqlCommand cmd = new MySqlCommand("delete from Cliente where Id=@Id", conexao);
                 cmd.Parameters.AddWithValue("@Id", Id);
                 int i = cmd.ExecuteNonQuery();
                 conexao.Close();
