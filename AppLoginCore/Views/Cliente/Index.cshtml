@@ -36,7 +36,28 @@
                     <td>@cliente.Telefone</td>
                     <td>@cliente.Email</td>
                     <td>@cliente.Senha</td>
+                    <td>@cliente.Telefone</td>
 
+
+                    <td>
+                        @if (cliente.Situacao == "A")
+                        {
+                            <button type="button" class="btn btn-danger">
+                                @Html.ActionLink("Desativar", "Desativar", new { id = cliente.Id },
+                                    new { onclick = "return confirm('Deseja realmente desativar?');" })
+                            </button>
+                        }
+                        else if (cliente.Situacao == "D")
+                        {
+                            <button type="button" class="btn btn-secondary">
+                                @Html.ActionLink("Ativar", "Ativar", new { id = cliente.Id },
+                                    new { onclick = "return confirm('Deseja realmente ativar?');" })
+                            </button>
+                        }
+                    </td>
+                </tr>
+                
+                <tr>
                     <td>
                         <a asp-action="GerarSenha" asp-route-id="@cliente.Id" class="btn btn-secondary">Atualizar</a>
                         @* <a asp-action="Atualizar" asp-route-id="@cliente.Id" class="btn btn-secondary">Atualizar</a>*@

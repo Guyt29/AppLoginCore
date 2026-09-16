@@ -158,7 +158,7 @@ namespace AppLoginCore.Repository
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from tbCliente", conexao);
+                MySqlCommand cmd = new MySqlCommand("select * from Cliente", conexao);
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
@@ -179,7 +179,7 @@ namespace AppLoginCore.Repository
                             Sexo = Convert.ToString(dr["Sexo"]),
                             CPF = Convert.ToString(dr["CPF"]),
                             Telefone = Convert.ToString(dr["Telefone"]),
-                            Situacao = Convert.ToString(dr["Situação"]),
+                            Situacao = Convert.ToString(dr["Situacao"]),
                             Email = Convert.ToString(dr["Email"]),
                             Senha = Convert.ToString(dr["Senha"])
                         });
@@ -227,5 +227,50 @@ namespace AppLoginCore.Repository
         {
             throw new NotImplementedException();
         }
+        public void Ativar(int Id)
+        {
+            string Situacao = SituacaoConstant.Ativo;
+
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+
+                MySqlCommand cmd = new MySqlCommand(
+                    "update Cliente set Situacao=@Situacao WHERE Id=@Id",
+                    conexao
+                );
+
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+
+                cmd.ExecuteNonQuery();
+
+                conexao.Close();
+            }
+        }
+        public void Desativar(int Id)
+        {
+            string Situacao = SituacaoConstant.Desativado;
+
+                using (var conexao = new MySqlConnection(_conexaoMySQL))
+                {
+                    conexao.Open();
+
+                    MySqlCommand cmd = new MySqlCommand(
+                        "update Cliente set Situacao=@Situacao WHERE Id=@Id",
+                        conexao
+                    );
+
+                    cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                    cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+
+                    cmd.ExecuteNonQuery();
+
+                    conexao.Close();
+                }
+        }     
+
+
     }
 }
+
