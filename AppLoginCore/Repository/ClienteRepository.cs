@@ -55,7 +55,7 @@ namespace AppLoginCore.Repository
                     "values (@Nome, @Nascimento, @Sexo, @CPF, @Telefone, @Email, @Senha, @Situacao)", conexao);
 
                 cmd.Parameters.Add("@Nome", MySqlDbType.VarChar).Value = cliente.Nome;
-                cmd.Parameters.Add("@Nascimento", MySqlDbType.Datetime).Value = cliente.Nascimento;
+                cmd.Parameters.Add("@Nascimento", MySqlDbType.Datetime).Value = cliente.Nascimento.ToString("yyyy/MM/dd");
                 cmd.Parameters.Add("@Sexo", MySqlDbType.VarChar).Value = cliente.Sexo;
                 cmd.Parameters.Add("@CPF", MySqlDbType.VarChar).Value = cliente.CPF;
                 cmd.Parameters.Add("@Telefone", MySqlDbType.VarChar).Value = cliente.Telefone;
@@ -252,22 +252,22 @@ namespace AppLoginCore.Repository
         {
             string Situacao = SituacaoConstant.Desativado;
 
-                using (var conexao = new MySqlConnection(_conexaoMySQL))
-                {
-                    conexao.Open();
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
 
-                    MySqlCommand cmd = new MySqlCommand(
-                        "update Cliente set Situacao=@Situacao WHERE Id=@Id",
-                        conexao
-                    );
+                MySqlCommand cmd = new MySqlCommand(
+                    "update Cliente set Situacao=@Situacao WHERE Id=@Id",
+                    conexao
+                );
 
-                    cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
-                    cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
+                cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = Id;
+                cmd.Parameters.Add("@Situacao", MySqlDbType.VarChar).Value = Situacao;
 
-                    cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-                    conexao.Close();
-                }
+                conexao.Close();
+            }
         }     
 
 

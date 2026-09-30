@@ -60,7 +60,6 @@ namespace AppLoginCore.Areas.Colaborador.Controllers
             return View();
         }
         
-        [HttpPost]
         [ValidateHttpReferer]
         public IActionResult Excluir(int id)
         {
