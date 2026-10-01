@@ -7,6 +7,8 @@
 
 <form method="post">
 
+    <input asp-for="Id" type="hidden" />
+
     <div class="form-group">
         <label asp-for="Nome"></label>
         <input asp-for="Nome" class="form-control" placeholder="Digite o nome do colaborador" />
@@ -25,6 +27,8 @@
         <span asp-validation-for="Senha" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
+    <input asp-for="Tipo" type="hidden" />
+
+    <button type="submit" class="btn btn-primary">Salvar</button>       
     <a asp-action="Index" class="btn btn-info">Voltar</a>
 </form>

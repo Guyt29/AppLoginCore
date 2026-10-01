@@ -19,15 +19,9 @@ namespace AppLoginCore.Models
         [Display(Name = "Senha")]
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "O senha é obrigatório")]
-        [StringLength(10, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 10 caracteres")]
+        [StringLength(8, MinimumLength = 6, ErrorMessage = "A senha deve ter entre 6 e 8 caracteres")]
         public string Senha { get; set; }
-        [Display(Name = "CPF")]
-        [Required(ErrorMessage = "O CPF é obrigatório")]
-        public string CPF { get; set; }
 
-        [Display(Name = "Celular")]
-        [Required(ErrorMessage = "O Celular é obrigatório")]
-        public string Telefone { get; set; }
         /*
          * TIPO COLABORTIPOCONSTANT
          */
