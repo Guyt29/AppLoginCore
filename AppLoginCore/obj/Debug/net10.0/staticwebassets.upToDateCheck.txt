@@ -598,8 +598,8 @@ C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\lib\jquery\dist\jquery.sl
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\lib\mask\jquery.mask.min.js
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-grid.css
+C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\lib\mask\jquery.mask.min.js
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-grid.css.map
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-grid.min.css
 C:\Users\jjv\Desktop\AppLoginCore\AppLoginCore\wwwroot\resources\lib\bootstrap-4.2.1-dist\css\bootstrap-grid.min.css.map

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\areas\\colaborador\\views\\colaborador\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\areas\\colaborador\\views\\colaborador\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\views\\home\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\views\\home\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\repository\\contract\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\repository\\contract\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\banco\\banco.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\banco\\banco.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\areas\\colaborador\\views\\colaborador\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\areas\\colaborador\\views\\colaborador\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\views\\home\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|solutionrelative:applogincore\\views\\home\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95997378-91B2-A9B0-6E98-147D5BE81249}|AppLoginCore\\AppLoginCore.csproj|c:\\users\\jjv\\desktop\\applogincore\\applogincore\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -102,11 +106,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AppLoginCore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AppLoginCore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-13T20:45:31.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "AppLoginCore\\wwwroot\\js\\site.js",
@@ -114,38 +131,37 @@
               "RelativeToolTip": "AppLoginCore\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-13T20:19:14.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-13T20:19:14.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Cadastrar.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Views\\Home\\Cadastrar.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Views\\Home\\Cadastrar.cshtml",
               "ToolTip": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Views\\Home\\Cadastrar.cshtml",
               "RelativeToolTip": "AppLoginCore\\Views\\Home\\Cadastrar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-13T12:15:01.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
               "ToolTip": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
               "RelativeToolTip": "AppLoginCore\\Repository\\Contract\\IClienteRepository.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T12:00:31.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Controllers\\HomeController.cs",
@@ -153,12 +169,11 @@
               "RelativeToolTip": "AppLoginCore\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAqwFEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T11:31:19.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-13T11:31:19.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Controllers\\HomeController.cs",
@@ -166,12 +181,11 @@
               "RelativeToolTip": "AppLoginCore\\Areas\\Colaborador\\Controllers\\HomeController.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAmwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T11:28:56.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-13T11:28:56.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ColaboradorTipoConstant.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Constants\\ColaboradorTipoConstant.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Models\\Constants\\ColaboradorTipoConstant.cs",
@@ -179,12 +193,11 @@
               "RelativeToolTip": "AppLoginCore\\Models\\Constants\\ColaboradorTipoConstant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T11:52:14.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T11:52:14.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Edit.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Edit.cshtml",
@@ -192,12 +205,11 @@
               "RelativeToolTip": "AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Edit.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T11:51:38.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T11:51:38.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "banco.txt",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Banco\\banco.txt",
               "RelativeDocumentMoniker": "AppLoginCore\\Banco\\banco.txt",
@@ -205,25 +217,24 @@
               "RelativeToolTip": "AppLoginCore\\Banco\\banco.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-10-01T13:16:01.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-01T13:16:01.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Cadastrar.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Cadastrar.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Cadastrar.cshtml",
               "ToolTip": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Cadastrar.cshtml",
               "RelativeToolTip": "AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Cadastrar.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-09-30T11:59:04.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ColaboradorController.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Controllers\\ColaboradorController.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Controllers\\ColaboradorController.cs",
@@ -235,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Repository\\ClienteRepository.cs",
@@ -247,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ColaboradorRepository.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Repository\\ColaboradorRepository.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Repository\\ColaboradorRepository.cs",
@@ -259,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Atualizar.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Atualizar.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Atualizar.cshtml",
@@ -271,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\appsettings.json",
               "RelativeDocumentMoniker": "AppLoginCore\\appsettings.json",
@@ -283,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Models\\Colaborador.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Models\\Colaborador.cs",
@@ -295,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Index.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Colaborador\\Index.cshtml",
@@ -307,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Atualizar.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Views\\Colaborador\\Atualizar.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Views\\Colaborador\\Atualizar.cshtml",
@@ -319,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Details.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Details.cshtml",
@@ -331,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Program.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Program.cs",
@@ -343,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Delete.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Delete.cshtml",
@@ -355,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Controllers\\ClienteController.cs",
@@ -367,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "AppLoginCore\\Areas\\Colaborador\\Views\\Cliente\\Index.cshtml",
@@ -379,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ValidateHttpRefererAttribute.cs",
               "DocumentMoniker": "C:\\Users\\jjv\\Desktop\\AppLoginCore\\AppLoginCore\\Libraries\\Filtro\\ValidateHttpRefererAttribute.cs",
               "RelativeDocumentMoniker": "AppLoginCore\\Libraries\\Filtro\\ValidateHttpRefererAttribute.cs",
