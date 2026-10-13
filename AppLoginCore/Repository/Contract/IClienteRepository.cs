@@ -3,8 +3,11 @@ using X.PagedList;
 
 namespace AppLoginCore.Repository.Contract
 {
+ 
     public interface IClienteRepository
     {
+        Cliente BuscaCpfCliente(string CPF);
+        Cliente BuscaEmailCliente(string email);
         //Login cliente
         Cliente Login(string Email, string Senha);
 

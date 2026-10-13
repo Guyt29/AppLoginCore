@@ -268,8 +268,48 @@ namespace AppLoginCore.Repository
 
                 conexao.Close();
             }
-        }     
+        }
+        //Busca cpf cadastrado
+        public Cliente BuscaCpfCliente(string CPF)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select CPF from Cliente WHERE CPF=@CPF ", conexao);
+                cmd.Parameters.AddWithValue("@CPF", CPF);
 
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.CPF = (string)(dr["CPF"]);
+                }
+                return cliente;
+            }
+        }
+        public Cliente BuscaEmailCliente(string email)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select Email from Cliente WHERE Email=@Email ", conexao);
+                cmd.Parameters.AddWithValue("@Email", email);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.Email = (string)(dr["Email"]);
+                }
+                return cliente;
+            }
+        }
 
     }
 }

@@ -2,6 +2,7 @@ using AppLoginCore.Libraries.Filtro;
 using AppLoginCore.Libraries.Login;
 using AppLoginCore.Models;
 using AppLoginCore.Models.Constant;
+using AppLoginCore.Repository;
 using AppLoginCore.Repository.Contract;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -71,16 +72,27 @@ namespace AppLoginCore.Controllers
         [HttpPost]
         public IActionResult Cadastrar([FromForm] Cliente cliente)
         {
-            cliente.Situacao = SituacaoConstant.Ativo;
+            var CPFExit = _clienteRepository.BuscaCpfCliente(cliente.CPF).CPF;
+            var EmailExit = _clienteRepository.BuscaEmailCliente(cliente.Email).Email;
 
-            _clienteRepository.Cadastrar(cliente);
-            return RedirectToAction(nameof(Cadastrar));
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (!string.IsNullOrWhiteSpace(CPFExit))
+            {
+                //CPF Cadastrado
+                ViewData["MSG_CPF"] = "CPF já cadastrado, por favor verifique os dados digitado";
+                return View();
+            }
+            else if (!string.IsNullOrWhiteSpace(EmailExit))
+            {
+                //Email Cadastrado
+                ViewData["MSG_Email"] = "E-mail já cadastrado, por favor verifique os dados digitado";
+                return View();
+            }
+            else if (ModelState.IsValid)
+            {
+                _clienteRepository.Cadastrar(cliente);
+                return RedirectToAction(nameof(Login));
+            }
+            return View();
         }
     }
 }
