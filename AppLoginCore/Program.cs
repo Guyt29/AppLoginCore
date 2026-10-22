@@ -34,9 +34,20 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddMvc().AddSessionStateTempDataProvider();
 
+//SWAGER
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 builder.Services.AddScoped<AppLoginCore.Libraries.Sessao.Sessao>();
 
 var app = builder.Build();
+
+//SWAGGER
+if(app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -56,6 +67,9 @@ app.UseMiddleware<ValidateAntiForgeryTokenMiddleware>();
 app.UseRouting();
 
 app.UseAuthorization();
+
+//CONTROLLERS MVC E API
+app.MapControllers();
 
 app.UseEndpoints(endpoints =>
 {

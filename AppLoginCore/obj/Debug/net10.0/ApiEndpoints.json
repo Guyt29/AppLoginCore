@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ClienteAPIController",
+    "Method": "ListarCliente",
+    "RelativePath": "api/ClienteAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ClienteAPIController",
+    "Method": "Post",
+    "RelativePath": "api/ClienteAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "AppLoginCore.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ClienteAPIController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/ClienteAPI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

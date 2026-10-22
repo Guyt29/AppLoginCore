@@ -72,27 +72,36 @@ namespace AppLoginCore.Controllers
         [HttpPost]
         public IActionResult Cadastrar([FromForm] Cliente cliente)
         {
-            var CPFExit = _clienteRepository.BuscaCpfCliente(cliente.CPF).CPF;
-            var EmailExit = _clienteRepository.BuscaEmailCliente(cliente.Email).Email;
-
-            if (!string.IsNullOrWhiteSpace(CPFExit))
+            if (!string.IsNullOrEmpty(cliente.CPF))
             {
-                //CPF Cadastrado
-                ViewData["MSG_CPF"] = "CPF já cadastrado, por favor verifique os dados digitado";
-                return View();
+                cliente.CPF = new string(cliente.CPF.Where(char.IsDigit).ToArray());
             }
-            else if (!string.IsNullOrWhiteSpace(EmailExit))
+            if (!string.IsNullOrEmpty(cliente.Telefone))
             {
-                //Email Cadastrado
-                ViewData["MSG_Email"] = "E-mail já cadastrado, por favor verifique os dados digitado";
-                return View();
+                cliente.Telefone = new string(cliente.Telefone.Where(char.IsDigit).ToArray());
+            }
+
+            var cpfBuscado = _clienteRepository.BuscaCpfCliente(cliente.CPF);
+            var emailBuscado = _clienteRepository.BuscaEmailCliente(cliente.Email);
+
+            // Verifica se o CPF retornado tem conteúdo preenchido
+            if (cpfBuscado != null && !string.IsNullOrEmpty(cpfBuscado.CPF))
+            {
+                ViewData["MSG_CPF"] = "CPF já cadastrado, por favor verifique os dados digitados";
+                return View(cliente); // IMPORTANTE: Passar o cliente de volta para a View!
+            }
+            else if (emailBuscado != null && !string.IsNullOrEmpty(emailBuscado.Email))
+            {
+                ViewData["MSG_Email"] = "E-mail já cadastrado, por favor verifique os dados digitados";
+                return View(cliente); // IMPORTANTE: Passar o cliente de volta para a View!
             }
             else if (ModelState.IsValid)
             {
                 _clienteRepository.Cadastrar(cliente);
                 return RedirectToAction(nameof(Login));
             }
-            return View();
-        }
+            _clienteRepository.Cadastrar(cliente);
+            return View(nameof(Index));
+        }   
     }
 }
