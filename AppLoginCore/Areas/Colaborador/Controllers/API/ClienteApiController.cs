@@ -1,4 +1,5 @@
-﻿using AppLoginCore.Models;
+﻿using System.Security.Cryptography.X509Certificates;
+using AppLoginCore.Models;
 using AppLoginCore.Repository.Contract;
 using Microsoft.AspNetCore.Mvc;
 
@@ -80,6 +81,27 @@ namespace AppLoginCore.Areas.Colaborador.Controllers.API
             return Ok(new
             {
                 mensagem = "Cliente atualizado com sucesso"
+            });
+
+        }
+        [HttpDelete("{id}")]
+        public IActionResult Excluir(int id)
+        {
+            var cliente = _clienteRepository.ObterCliente(id);
+
+            if(cliente == null)
+            {
+                return NotFound(new
+                {
+                    mensagem = "Cliente não encontrado"
+                });
+            }
+
+            _clienteRepository.Excluir(id);
+
+            return Ok(new
+            {
+                mensagem = "Cliente excluido com sucesso"
             });
         }
     }

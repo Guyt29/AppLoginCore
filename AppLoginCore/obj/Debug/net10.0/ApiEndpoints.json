@@ -40,5 +40,121 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ClienteAPIController",
+    "Method": "Atualizar",
+    "RelativePath": "api/ClienteAPI/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cliente",
+        "Type": "AppLoginCore.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ClienteAPIController",
+    "Method": "Excluir",
+    "RelativePath": "api/ClienteAPI/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ColaboradorApiController",
+    "Method": "ListarColaborador",
+    "RelativePath": "api/ColaboradorApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ColaboradorApiController",
+    "Method": "Post",
+    "RelativePath": "api/ColaboradorApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "colaborador",
+        "Type": "AppLoginCore.Models.Colaborador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ColaboradorApiController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/ColaboradorApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ColaboradorApiController",
+    "Method": "Atualizar",
+    "RelativePath": "api/ColaboradorApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "colaborador",
+        "Type": "AppLoginCore.Models.Colaborador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppLoginCore.Areas.Colaborador.Controllers.API.ColaboradorApiController",
+    "Method": "Excluir",
+    "RelativePath": "api/ColaboradorApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
